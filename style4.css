@@ -1,0 +1,118 @@
+body {
+ 
+	background: linear-gradient(to bottom, #ADD8E6, white);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+}
+
+nav {
+    background: #4682B4;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #FFFFFF;
+    margin: 0 15px;
+    text-decoration: none;
+	font-family: "Poppins", sans-serif;
+    font-weight: bold;
+	
+}
+nav a {
+  color: #FFFFFF;
+  margin: 0 15px;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+nav a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  background: #FFFFFF; 
+  left: 50%;
+  bottom: -5px;
+  transition: width 0.3s ease;
+  transform: translateX(-50%);
+}
+nav a:hover::after {
+  width: 100%;
+}
+
+.headerTitle {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: clamp(24px, 4vw, 40px);
+  color: whitesmoke;
+  text-align: center;
+  text-decoration: none
+}
+.container {
+    width: 80%;
+    margin: 30px auto;
+    background: #ADD8E6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+	color:black;
+}
+
+input, select, button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+	border-color: #00679D;
+}
+
+button {
+     background-color: #4682B4;
+    color: #FFFFFF;
+	border:none;
+    border-radius:20px;
+    cursor: pointer;
+	width:auto;
+}
+button:hover{
+	 background-color:#0033FF;
+	color:#FFFFFF;
+
+}
+p{
+	color:black;
+	font-size:150%;
+}
+
+.message {
+    margin-top: 15px;
+    font-weight: bold;
+    color: red;
+}
+ul{
+	color:black;
+	font-size:150%;
+	text-align:center;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+}
+
+th {
+    background-color: #00679D;
+    color: white;
+}
+
+td, th {
+    border: 1px solid #ccc;
+}
