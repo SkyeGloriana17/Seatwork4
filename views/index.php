@@ -31,13 +31,13 @@ Comfort Zone Hotel
    <center> <p>Your comfort is our priority. Book your stay easily and hassle-free.</p> </center>
    
    
-   <a href="views/signup.php">
+   <a href="signup.php">
    <center> <button type="button" style="border-radius: 15px;"> Sign-Up </button></center> </a>
    
-   <a href="views/login.php">
+   <a href="login.php">
    <center> <button type="button" style="border-radius: 15px;"> Login </button></center> </a>
    
-   <a href="views/reservation.php">
+   <a href="reservation.php">
                   <center> <button type="button" style="border-radius:15px;">Book a reservation now!</button> </center>
    </a>
    

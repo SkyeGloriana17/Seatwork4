@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
 
         else {
 
-            header("Location: ../index.php");
+            header("Location: ../views/guest.php");
         }
 
         exit();
