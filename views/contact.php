@@ -10,9 +10,9 @@
 <body>
 
 <nav>
-<div class="headerTitle">
-Comfort Zone Hotel
-</div>
+    <div class="headerTitle">
+        Comfort Zone Hotel
+    </div>
     <a href="index.php">HOME</a>
     <a href="profile.php">COMPANY PROFILE</a>
     <a href="reservation.php">RESERVATION</a>

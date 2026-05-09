@@ -1,40 +1,15 @@
 <?php
 session_start();
 
-// DB CONNECTION
-$conn = new mysqli("localhost", "root", "", "hotel_db");
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
 $message = "";
 
-// LOGIN LOGIC
-if (isset($_POST['login'])) {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
+if (isset($_SESSION['message'])) {
+    $message = $_SESSION['message'];
+    unset($_SESSION['message']);
+}
 
-    $sql = "SELECT * FROM users WHERE username='$username' AND password='$password'";
-    $result = $conn->query($sql);
-
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-
-        // Store session
-        $_SESSION['username'] = $user['username'];
-        $_SESSION['role'] = $user['role'];
-
-        // Redirect based on role
-        if ($user['role'] === 'admin') {
-            header("Location: admin.php");
-        } else {
-            header("Location: index.php");
-        }
-        exit();
-    } else {
-        $message = "Invalid username or password!";
-    }
+if (!empty($message)) {
+    echo "<p style='color:red;'>$message</p>";
 }
 ?>
 
@@ -64,7 +39,7 @@ Comfort Zone Hotel
 <div class="container">
     <h1>Login</h1>
 
-    <form method="POST">
+    <form action = "../controllers/loginController.php"method="POST">
         <label>Username:</label>
         <input type="text" name="username" required>
         <br><br>
