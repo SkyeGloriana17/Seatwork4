@@ -42,7 +42,7 @@ if (isset($_POST['login'])) {
 <html>
 <head>
     <title>Login</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../assets/style4.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 </style>	
@@ -67,16 +67,17 @@ Comfort Zone Hotel
     <form method="POST">
         <label>Username:</label>
         <input type="text" name="username" required>
+        <br><br>
 
         <label>Password:</label>
         <div style="position: relative;">
             <input type="password" name="password" id="password" required>
             <button type="button" onclick="togglePassword()" 
-                style="position:absolute; right:10px; top:8px;">
+                style="position:absolute; right:-10px; top:0px;"  >
                 👁
             </button>
         </div>
-        <br><br>
+        <br>
         <button type="submit" name="login">Login</button>
     </form>
 

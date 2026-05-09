@@ -78,7 +78,7 @@ $totalRevenue = $conn->query("SELECT SUM(total_amount) AS total FROM reservation
 <html>
 <head>
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="style4.css">
+    <link rel="stylesheet" href="../assets/style4.css">
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 </style>
